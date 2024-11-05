@@ -1,0 +1,213 @@
+\hypertarget{classBinaryTree}{\section{Binary\-Tree$<$ elt\-Type $>$ Class Template Reference}
+\label{classBinaryTree}\index{Binary\-Tree$<$ elt\-Type $>$@{Binary\-Tree$<$ elt\-Type $>$}}
+}
+
+
+Holds a generalized binary tree of data.  
+
+
+
+
+{\ttfamily \#include $<$Binary\-Search\-Tree.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBinaryTree_adde2bcc613cebcf3bd4e681806175567}{\hyperlink{classBinaryTree_adde2bcc613cebcf3bd4e681806175567}{Binary\-Tree} ()}\label{classBinaryTree_adde2bcc613cebcf3bd4e681806175567}
+
+\begin{DoxyCompactList}\small\item\em Basic constructor for \hyperlink{classBinaryTree}{Binary\-Tree}. \end{DoxyCompactList}\item 
+int \hyperlink{classBinaryTree_afb14a5380e1204fe352075b013618ac3}{insert\-To\-Tree} (const elt\-Type \&data)
+\begin{DoxyCompactList}\small\item\em Inserts an element into the binary tree. \end{DoxyCompactList}\item 
+bool \hyperlink{classBinaryTree_a99fdf05dd327c4268cd0903799dd5a1a}{tree\-Search} (const elt\-Type \&data)
+\begin{DoxyCompactList}\small\item\em Searches the tree for the selected element. \end{DoxyCompactList}\item 
+elt\-Type \& \hyperlink{classBinaryTree_ac57eed7f7dc8db789f2a865927404d92}{retrieve\-From\-Tree} (const elt\-Type \&data)
+\begin{DoxyCompactList}\small\item\em Returns an element from the. \end{DoxyCompactList}\item 
+void \hyperlink{classBinaryTree_acb6d90ef9addab70a44658f5612d6b34}{delete\-From\-Tree} (const elt\-Type \&data)
+\begin{DoxyCompactList}\small\item\em Deletes the specified element from the tree. \end{DoxyCompactList}\item 
+\hypertarget{classBinaryTree_a1a38ec31c939f0c6fd914634acb4f6f1}{void \hyperlink{classBinaryTree_a1a38ec31c939f0c6fd914634acb4f6f1}{inorder} () const }\label{classBinaryTree_a1a38ec31c939f0c6fd914634acb4f6f1}
+
+\begin{DoxyCompactList}\small\item\em Display Tree using In\-Order Traversal. \end{DoxyCompactList}\item 
+\hypertarget{classBinaryTree_a0e5191039f7c8d694347026e7d027ab7}{void \hyperlink{classBinaryTree_a0e5191039f7c8d694347026e7d027ab7}{preorder} () const }\label{classBinaryTree_a0e5191039f7c8d694347026e7d027ab7}
+
+\begin{DoxyCompactList}\small\item\em Display Tree using Pre\-Order Traversal. \end{DoxyCompactList}\item 
+\hypertarget{classBinaryTree_abdc1d9a98d834b07e13c11fdd73f8700}{void \hyperlink{classBinaryTree_abdc1d9a98d834b07e13c11fdd73f8700}{postorder} () const }\label{classBinaryTree_abdc1d9a98d834b07e13c11fdd73f8700}
+
+\begin{DoxyCompactList}\small\item\em Display Tree using Post\-Order Traversal. \end{DoxyCompactList}\item 
+\hypertarget{classBinaryTree_af3e70173e5c3cc529c944fb3f7c0784d}{void \hyperlink{classBinaryTree_af3e70173e5c3cc529c944fb3f7c0784d}{tree\-Print} () const }\label{classBinaryTree_af3e70173e5c3cc529c944fb3f7c0784d}
+
+\begin{DoxyCompactList}\small\item\em Breadth first print. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBinaryTree_a8a9a4a08e66b5712e85e5cd2b5a30449}{print\-Inorder} (\hyperlink{classTreeNode}{Tree\-Node}$<$ elt\-Type $>$ $\ast$) const 
+\begin{DoxyCompactList}\small\item\em Display Tree using In\-Order Traversal. \end{DoxyCompactList}\item 
+void \hyperlink{classBinaryTree_a1cfa4e25467fc86dc7e39e5d102ec018}{print\-Preorder} (\hyperlink{classTreeNode}{Tree\-Node}$<$ elt\-Type $>$ $\ast$) const 
+\begin{DoxyCompactList}\small\item\em Display Tree using Pre\-Order Traversal. \end{DoxyCompactList}\item 
+void \hyperlink{classBinaryTree_a6c73081dd682ad15d1c474d0e907eeac}{print\-Postorder} (\hyperlink{classTreeNode}{Tree\-Node}$<$ elt\-Type $>$ $\ast$) const 
+\begin{DoxyCompactList}\small\item\em Display Tree using Post\-Order Traversal. \end{DoxyCompactList}\item 
+void \hyperlink{classBinaryTree_a8e5db6297ddc5ee9d4229a39b0fb7a94}{tree\-Print\-Helper} (\hyperlink{classTreeNode}{Tree\-Node}$<$ elt\-Type $>$ $\ast$) const 
+\begin{DoxyCompactList}\small\item\em Helps to print the tree breadth first. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBinaryTree_a89df572c2c98d79570aeabfe2a74a987}{\hyperlink{classTreeNode}{Tree\-Node}$<$ elt\-Type $>$ $\ast$ {\bfseries root}}\label{classBinaryTree_a89df572c2c98d79570aeabfe2a74a987}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename elt\-Type$>$class Binary\-Tree$<$ elt\-Type $>$}
+
+Holds a generalized binary tree of data. 
+
+Capabilities\-: \par
+ -\/ Inserting elements to the tree \par
+ -\/ Removing elements from the tree \par
+ -\/ Searching for elements in the tree \par
+ -\/ Printing the tree in multiple different ways \par
+ -\/ Helper functions to help to print the tree 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBinaryTree_acb6d90ef9addab70a44658f5612d6b34}{\index{Binary\-Tree@{Binary\-Tree}!delete\-From\-Tree@{delete\-From\-Tree}}
+\index{delete\-From\-Tree@{delete\-From\-Tree}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{delete\-From\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ {\bf Binary\-Tree}$<$ elt\-Type $>$\-::delete\-From\-Tree (
+\begin{DoxyParamCaption}
+\item[{const elt\-Type \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classBinaryTree_acb6d90ef9addab70a44658f5612d6b34}
+
+
+Deletes the specified element from the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const elt\-Type \&data} & \char`\"{}\-The specified element to delete from the tree\char`\"{} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryTree_afb14a5380e1204fe352075b013618ac3}{\index{Binary\-Tree@{Binary\-Tree}!insert\-To\-Tree@{insert\-To\-Tree}}
+\index{insert\-To\-Tree@{insert\-To\-Tree}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{insert\-To\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ {\bf Binary\-Tree}$<$ elt\-Type $>$\-::insert\-To\-Tree (
+\begin{DoxyParamCaption}
+\item[{const elt\-Type \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classBinaryTree_afb14a5380e1204fe352075b013618ac3}
+
+
+Inserts an element into the binary tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const elt\-Type \&data} & \char`\"{}\-The element to be inserted into the tree\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ returns 1 if inserted, 0 else-\/wise 
+\end{DoxyReturn}
+\hypertarget{classBinaryTree_a8a9a4a08e66b5712e85e5cd2b5a30449}{\index{Binary\-Tree@{Binary\-Tree}!print\-Inorder@{print\-Inorder}}
+\index{print\-Inorder@{print\-Inorder}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{print\-Inorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ {\bf Binary\-Tree}$<$ elt\-Type $>$\-::print\-Inorder (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\-Node}$<$ elt\-Type $>$ $\ast$}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBinaryTree_a8a9a4a08e66b5712e85e5cd2b5a30449}
+
+
+Display Tree using In\-Order Traversal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tree\-Node$<$elt\-Type$>$ $\ast$} & -\/ The current node, used for traversal \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryTree_a6c73081dd682ad15d1c474d0e907eeac}{\index{Binary\-Tree@{Binary\-Tree}!print\-Postorder@{print\-Postorder}}
+\index{print\-Postorder@{print\-Postorder}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{print\-Postorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ {\bf Binary\-Tree}$<$ elt\-Type $>$\-::print\-Postorder (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\-Node}$<$ elt\-Type $>$ $\ast$}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBinaryTree_a6c73081dd682ad15d1c474d0e907eeac}
+
+
+Display Tree using Post\-Order Traversal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tree\-Node$<$elt\-Type$>$ $\ast$} & -\/ The current node, used for traversal \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryTree_a1cfa4e25467fc86dc7e39e5d102ec018}{\index{Binary\-Tree@{Binary\-Tree}!print\-Preorder@{print\-Preorder}}
+\index{print\-Preorder@{print\-Preorder}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{print\-Preorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ {\bf Binary\-Tree}$<$ elt\-Type $>$\-::print\-Preorder (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\-Node}$<$ elt\-Type $>$ $\ast$}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBinaryTree_a1cfa4e25467fc86dc7e39e5d102ec018}
+
+
+Display Tree using Pre\-Order Traversal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tree\-Node$<$elt\-Type$>$ $\ast$} & -\/ The current node, used for traversal \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryTree_ac57eed7f7dc8db789f2a865927404d92}{\index{Binary\-Tree@{Binary\-Tree}!retrieve\-From\-Tree@{retrieve\-From\-Tree}}
+\index{retrieve\-From\-Tree@{retrieve\-From\-Tree}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{retrieve\-From\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ \& {\bf Binary\-Tree}$<$ elt\-Type $>$\-::retrieve\-From\-Tree (
+\begin{DoxyParamCaption}
+\item[{const elt\-Type \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classBinaryTree_ac57eed7f7dc8db789f2a865927404d92}
+
+
+Returns an element from the. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const elt\-Type \&data} & \char`\"{}\-The element to retrieve from the tree\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+elt\-Type -\/ The element retrieved from the tree 
+\end{DoxyReturn}
+\hypertarget{classBinaryTree_a8e5db6297ddc5ee9d4229a39b0fb7a94}{\index{Binary\-Tree@{Binary\-Tree}!tree\-Print\-Helper@{tree\-Print\-Helper}}
+\index{tree\-Print\-Helper@{tree\-Print\-Helper}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{tree\-Print\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ {\bf Binary\-Tree}$<$ elt\-Type $>$\-::tree\-Print\-Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\-Node}$<$ elt\-Type $>$ $\ast$}]{root}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBinaryTree_a8e5db6297ddc5ee9d4229a39b0fb7a94}
+
+
+Helps to print the tree breadth first. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tree\-Node$<$elt\-Type$>$ $\ast$} & -\/ The current node, used for traversal \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryTree_a99fdf05dd327c4268cd0903799dd5a1a}{\index{Binary\-Tree@{Binary\-Tree}!tree\-Search@{tree\-Search}}
+\index{tree\-Search@{tree\-Search}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{tree\-Search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ {\bf Binary\-Tree}$<$ elt\-Type $>$\-::tree\-Search (
+\begin{DoxyParamCaption}
+\item[{const elt\-Type \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classBinaryTree_a99fdf05dd327c4268cd0903799dd5a1a}
+
+
+Searches the tree for the selected element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const elt\-Type \&data} & \char`\"{}\-The element to search for\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ returns true if found, false else-\/wise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BinarySearchTree_8h}{Binary\-Search\-Tree.\-h}\item 
+\hyperlink{BinarySearchTree_8cpp}{Binary\-Search\-Tree.\-cpp}\end{DoxyCompactItemize}

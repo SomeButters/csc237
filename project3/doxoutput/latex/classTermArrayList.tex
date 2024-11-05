@@ -1,0 +1,108 @@
+\hypertarget{classTermArrayList}{\section{Term\-Array\-List Class Reference}
+\label{classTermArrayList}\index{Term\-Array\-List@{Term\-Array\-List}}
+}
+
+
+\char`\"{}\-Subclass to Term\-List, implements functions using an array\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Term\-Array\-List.\-h$>$}
+
+Inheritance diagram for Term\-Array\-List\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTermArrayList}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classTermArrayList_a6c4ad3fa148ee300e41f1d8fae021451}{\hyperlink{classTermArrayList_a6c4ad3fa148ee300e41f1d8fae021451}{Term\-Array\-List} ()}\label{classTermArrayList_a6c4ad3fa148ee300e41f1d8fae021451}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Basic constructor for Term\-Array\-List\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classTermArrayList_a7abb9dc265a5d89e31bfa9caf0a0add3}{read\-Into\-List} (string filename)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Reads a file into the specified subclass list\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{classTermArrayList_a1c6a97fd1ba740bcddd6ee257ff4a088}{void \hyperlink{classTermArrayList_a1c6a97fd1ba740bcddd6ee257ff4a088}{print\-Iteratively} ()}\label{classTermArrayList_a1c6a97fd1ba740bcddd6ee257ff4a088}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Prints the contents of the subclass list in an iterative method\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classTermArrayList_a6777d9358149d683902610c24c4752f6}{print\-Recursively} (int x=0)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Prints the contents of the subclass list in a recursive method\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{classTermArrayList_a0619e7312f7af5c17ef029995029fa0d}{void \hyperlink{classTermArrayList_a0619e7312f7af5c17ef029995029fa0d}{print\-Ptr} ()}\label{classTermArrayList_a0619e7312f7af5c17ef029995029fa0d}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Prints the contents of the subclass list using a method utilizing a pointer\char`\"{} \end{DoxyCompactList}\item 
+virtual double \hyperlink{classTermArrayList_a890facace1b1acd72df0f500d9279a04}{operator()} (double x) const 
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Evaluates the subclass list using the value of the parameter x\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\-Subclass to Term\-List, implements functions using an array\char`\"{} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classTermArrayList_a890facace1b1acd72df0f500d9279a04}{\index{Term\-Array\-List@{Term\-Array\-List}!operator()@{operator()}}
+\index{operator()@{operator()}!TermArrayList@{Term\-Array\-List}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double Term\-Array\-List\-::operator() (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTermArrayList_a890facace1b1acd72df0f500d9279a04}
+
+
+\char`\"{}\-Evaluates the subclass list using the value of the parameter x\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double x} & \char`\"{}\-The value to be evaluated against the list\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classTermList_ad1600d9d577b619310f06e83e5e847ff}{Term\-List}.
+
+\hypertarget{classTermArrayList_a6777d9358149d683902610c24c4752f6}{\index{Term\-Array\-List@{Term\-Array\-List}!print\-Recursively@{print\-Recursively}}
+\index{print\-Recursively@{print\-Recursively}!TermArrayList@{Term\-Array\-List}}
+\subsubsection[{print\-Recursively}]{\setlength{\rightskip}{0pt plus 5cm}void Term\-Array\-List\-::print\-Recursively (
+\begin{DoxyParamCaption}
+\item[{int}]{x = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTermArrayList_a6777d9358149d683902610c24c4752f6}
+
+
+\char`\"{}\-Prints the contents of the subclass list in a recursive method\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int x} & \char`\"{}\-A value to hold the recursive iteration value of the current function's phase\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classTermList_af315579d71158e31fafa2905b20e1fa6}{Term\-List}.
+
+\hypertarget{classTermArrayList_a7abb9dc265a5d89e31bfa9caf0a0add3}{\index{Term\-Array\-List@{Term\-Array\-List}!read\-Into\-List@{read\-Into\-List}}
+\index{read\-Into\-List@{read\-Into\-List}!TermArrayList@{Term\-Array\-List}}
+\subsubsection[{read\-Into\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Term\-Array\-List\-::read\-Into\-List (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTermArrayList_a7abb9dc265a5d89e31bfa9caf0a0add3}
+
+
+\char`\"{}\-Reads a file into the specified subclass list\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string filename} & \char`\"{}\-String representation of a file name, for a file to be opened and inputted into a term list\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classTermList_a42a681a3ccc704e4a4086fcd34a01808}{Term\-List}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{TermArrayList_8h}{Term\-Array\-List.\-h}\item 
+Term\-Array\-List.\-cpp\end{DoxyCompactItemize}

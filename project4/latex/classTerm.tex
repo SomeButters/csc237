@@ -1,0 +1,312 @@
+\hypertarget{classTerm}{\section{Term Class Reference}
+\label{classTerm}\index{Term@{Term}}
+}
+
+
+A \hyperlink{classTerm}{Term} holds one term of a polynomial.  
+
+
+
+
+{\ttfamily \#include $<$Term.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classTerm_aa72ef129269040b50836346dcae32154}{\hyperlink{classTerm_aa72ef129269040b50836346dcae32154}{Term} (double=0, int=0)}\label{classTerm_aa72ef129269040b50836346dcae32154}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classTerm_a155053b3506f434c6c788deb46b58eca}{get\-Coefficient} () const 
+\begin{DoxyCompactList}\small\item\em Gets -\/ returns the coefficient. \end{DoxyCompactList}\item 
+int \hyperlink{classTerm_a4366a4bde58427fde228da9f95505a78}{get\-Exponent} () const 
+\begin{DoxyCompactList}\small\item\em Gets -\/ returns the exponent. \end{DoxyCompactList}\item 
+double \hyperlink{classTerm_a2d062538a273b7c843f5ba9cd90f8029}{set\-Coefficient} (double coeff)
+\begin{DoxyCompactList}\small\item\em Sets the coefficient. \end{DoxyCompactList}\item 
+int \hyperlink{classTerm_a03d05f613d85b04c92baa1016abfa7cf}{set\-Exponent} (int expn)
+\begin{DoxyCompactList}\small\item\em Sets the exponent. \end{DoxyCompactList}\item 
+double \hyperlink{classTerm_ab89ea23f82711d4fc9f4608d0937ce31}{operator()} (double x) const 
+\begin{DoxyCompactList}\small\item\em evaluation of term \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_adde655c99c378021d03b25f02cd531b9}{operator=} (int value)
+\begin{DoxyCompactList}\small\item\em updates the exponent \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a8e563a63ca972c9d2cffacb471a611a5}{operator==} (int value)
+\begin{DoxyCompactList}\small\item\em does exponent match the parameter? \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a22d1367b67d2c2d2762392463decde13}{operator==} (const \hyperlink{classTerm}{Term} \&right)
+\begin{DoxyCompactList}\small\item\em does exponent match that of the param? \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a5af142be15fea4c5c933b75c3151bfe8}{operator+=} (const \hyperlink{classTerm}{Term} \&right)
+\begin{DoxyCompactList}\small\item\em adds the term coefficents and updates this coefficient \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a1c27415f2852a3685cedd20fceac6f37}{operator!=} (int value)
+\begin{DoxyCompactList}\small\item\em does exponent match that of the param? \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_afa3f759f8bf094001d4b979999e40696}{operator!=} (const \hyperlink{classTerm}{Term} \&right)
+\begin{DoxyCompactList}\small\item\em does exponent match that of the param? \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a34755dc6c3b6084fb864bdad671be087}{operator$<$} (const \hyperlink{classTerm}{Term} \&right) const 
+\begin{DoxyCompactList}\small\item\em is this term's exponent less than right? \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a44f5d686c50172e689cf86b2c77bbc6a}{operator$<$} (int right)
+\begin{DoxyCompactList}\small\item\em is this term's exponent less than right? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classTerm}{Term} holds one term of a polynomial. 
+
+Capabilities\-: \par
+ -\/ Evaluate itself \par
+ -\/ Multiply coefficient by a scalar \par
+ -\/ Increment coefficient by a scalar \par
+ -\/ Compare in several ways \par
+ -\/ set and get (of course)
+
+The term can be created, evaluated, compared, and printed. Created by Dr. Spiegel. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classTerm_a155053b3506f434c6c788deb46b58eca}{\index{Term@{Term}!get\-Coefficient@{get\-Coefficient}}
+\index{get\-Coefficient@{get\-Coefficient}!Term@{Term}}
+\subsubsection[{get\-Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}double Term\-::get\-Coefficient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classTerm_a155053b3506f434c6c788deb46b58eca}
+
+
+Gets -\/ returns the coefficient. 
+
+retrieves the coefficient 
+\begin{DoxyParams}{Parameters}
+{\em n/a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double-\/ the coefficient at the index
+\end{DoxyReturn}
+\hypertarget{classTerm_a4366a4bde58427fde228da9f95505a78}{\index{Term@{Term}!get\-Exponent@{get\-Exponent}}
+\index{get\-Exponent@{get\-Exponent}!Term@{Term}}
+\subsubsection[{get\-Exponent}]{\setlength{\rightskip}{0pt plus 5cm}int Term\-::get\-Exponent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classTerm_a4366a4bde58427fde228da9f95505a78}
+
+
+Gets -\/ returns the exponent. 
+
+retrieves the exponent 
+\begin{DoxyParams}{Parameters}
+{\em n/a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int-\/ the exponent at the index
+\end{DoxyReturn}
+\hypertarget{classTerm_a1c27415f2852a3685cedd20fceac6f37}{\index{Term@{Term}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Term@{Term}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a1c27415f2852a3685cedd20fceac6f37}
+
+
+does exponent match that of the param? 
+
+Compares an int against the exponent 
+\begin{DoxyParams}{Parameters}
+{\em int} & value-\/ the number to compare the exponent by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true-\/ if doesn't match // false-\/ if match
+\end{DoxyReturn}
+\hypertarget{classTerm_afa3f759f8bf094001d4b979999e40696}{\index{Term@{Term}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Term@{Term}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term} \&}]{right}
+\end{DoxyParamCaption}
+)}}\label{classTerm_afa3f759f8bf094001d4b979999e40696}
+
+
+does exponent match that of the param? 
+
+Compares a \hyperlink{classTerm}{Term} against the exponent 
+\begin{DoxyParams}{Parameters}
+{\em int} & value-\/ the number to compare the exponent by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true-\/ if doesn't match // false-\/ if match
+\end{DoxyReturn}
+\hypertarget{classTerm_ab89ea23f82711d4fc9f4608d0937ce31}{\index{Term@{Term}!operator()@{operator()}}
+\index{operator()@{operator()}!Term@{Term}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double Term\-::operator() (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const}}\label{classTerm_ab89ea23f82711d4fc9f4608d0937ce31}
+
+
+evaluation of term 
+
+Evaluates the term by the input number 
+\begin{DoxyParams}{Parameters}
+{\em double} & x-\/ the number to evaluate to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of the evaluated term
+\end{DoxyReturn}
+\hypertarget{classTerm_a5af142be15fea4c5c933b75c3151bfe8}{\index{Term@{Term}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Term@{Term}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term} \&}]{right}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a5af142be15fea4c5c933b75c3151bfe8}
+
+
+adds the term coefficents and updates this coefficient 
+
+adds input term coefficient to coefficient 
+\begin{DoxyParams}{Parameters}
+{\em int} & value-\/ the number to compare the exponent by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true-\/ if match // false-\/ if doesn't match
+\end{DoxyReturn}
+\hypertarget{classTerm_a34755dc6c3b6084fb864bdad671be087}{\index{Term@{Term}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Term@{Term}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term} \&}]{right}
+\end{DoxyParamCaption}
+) const}}\label{classTerm_a34755dc6c3b6084fb864bdad671be087}
+
+
+is this term's exponent less than right? 
+
+Compares two Terms based on exponent 
+\begin{DoxyParams}{Parameters}
+{\em int} & value-\/ the value to make the comparision to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+according to the comparison
+\end{DoxyReturn}
+\hypertarget{classTerm_a44f5d686c50172e689cf86b2c77bbc6a}{\index{Term@{Term}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Term@{Term}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a44f5d686c50172e689cf86b2c77bbc6a}
+
+
+is this term's exponent less than right? 
+
+Compares \hyperlink{classTerm}{Term}'s exponent to an int 
+\begin{DoxyParams}{Parameters}
+{\em int} & value-\/ the value to make the comparision to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+according to the comparison
+\end{DoxyReturn}
+\hypertarget{classTerm_adde655c99c378021d03b25f02cd531b9}{\index{Term@{Term}!operator=@{operator=}}
+\index{operator=@{operator=}!Term@{Term}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator= (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{classTerm_adde655c99c378021d03b25f02cd531b9}
+
+
+updates the exponent 
+
+Compares an int against the exponent 
+\begin{DoxyParams}{Parameters}
+{\em int} & value-\/ the number to compare the exponent by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true-\/ if doesn't match // false-\/ if match
+\end{DoxyReturn}
+\hypertarget{classTerm_a8e563a63ca972c9d2cffacb471a611a5}{\index{Term@{Term}!operator==@{operator==}}
+\index{operator==@{operator==}!Term@{Term}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator== (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a8e563a63ca972c9d2cffacb471a611a5}
+
+
+does exponent match the parameter? 
+
+Compares an int against the exponent 
+\begin{DoxyParams}{Parameters}
+{\em int} & value-\/ the number to compare the exponent by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true-\/ if match // false-\/ if doesn't match
+\end{DoxyReturn}
+\hypertarget{classTerm_a22d1367b67d2c2d2762392463decde13}{\index{Term@{Term}!operator==@{operator==}}
+\index{operator==@{operator==}!Term@{Term}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term} \&}]{right}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a22d1367b67d2c2d2762392463decde13}
+
+
+does exponent match that of the param? 
+
+Compares a \hyperlink{classTerm}{Term} against the exponent 
+\begin{DoxyParams}{Parameters}
+{\em int} & value-\/ the number to compare the exponent by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true-\/ if match // false-\/ if doesn't match
+\end{DoxyReturn}
+\hypertarget{classTerm_a2d062538a273b7c843f5ba9cd90f8029}{\index{Term@{Term}!set\-Coefficient@{set\-Coefficient}}
+\index{set\-Coefficient@{set\-Coefficient}!Term@{Term}}
+\subsubsection[{set\-Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}double Term\-::set\-Coefficient (
+\begin{DoxyParamCaption}
+\item[{double}]{coeff}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a2d062538a273b7c843f5ba9cd90f8029}
+
+
+Sets the coefficient. 
+
+sets the coefficient 
+\begin{DoxyParams}{Parameters}
+{\em n/a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double-\/ the coefficient at the index
+\end{DoxyReturn}
+\hypertarget{classTerm_a03d05f613d85b04c92baa1016abfa7cf}{\index{Term@{Term}!set\-Exponent@{set\-Exponent}}
+\index{set\-Exponent@{set\-Exponent}!Term@{Term}}
+\subsubsection[{set\-Exponent}]{\setlength{\rightskip}{0pt plus 5cm}int Term\-::set\-Exponent (
+\begin{DoxyParamCaption}
+\item[{int}]{expn}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a03d05f613d85b04c92baa1016abfa7cf}
+
+
+Sets the exponent. 
+
+sets the exponent 
+\begin{DoxyParams}{Parameters}
+{\em n/a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int-\/ the exponent at the index
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Term_8h}{Term.\-h}\item 
+\hyperlink{Term_8cpp}{Term.\-cpp}\end{DoxyCompactItemize}

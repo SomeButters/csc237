@@ -1,0 +1,152 @@
+\hypertarget{classDblLink}{\section{Dbl\-Link$<$ elt\-Type $>$ Class Template Reference}
+\label{classDblLink}\index{Dbl\-Link$<$ elt\-Type $>$@{Dbl\-Link$<$ elt\-Type $>$}}
+}
+
+
+\char`\"{}\-Implementation of a doubly linked list for use in project 3, used by Dbl\-Link\-List.\-h/.\-cpp\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Dbl\-Link.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDblLink_aa55badb70305cb5f3666ee1a0caf51bd}{\hyperlink{classDblLink_aa55badb70305cb5f3666ee1a0caf51bd}{Dbl\-Link} ()}\label{classDblLink_aa55badb70305cb5f3666ee1a0caf51bd}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Basic constructor, initializes empty list\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{classDblLink_a6ec142fb189ce28f3470662d7816323c}{Dbl\-Link} (\hyperlink{classDblLink}{Dbl\-Link} \&)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Creates a deep copy construction of the list\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{classDblLink_af453e027e035c5f35f57884a119111c2}{\hyperlink{classDblLink_af453e027e035c5f35f57884a119111c2}{$\sim$\-Dbl\-Link} ()}\label{classDblLink_af453e027e035c5f35f57884a119111c2}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Basic destructor, destroys list\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{classDblLink}{Dbl\-Link} \& \hyperlink{classDblLink_a4ad84478d74adf66e4e8b33a790135b8}{operator=} (const \hyperlink{classDblLink}{Dbl\-Link} \&)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Assigns the contents of one doubly linked list to another\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classDblLink_a6967117514e7b8372e0b83cd74db0bdc}{empty} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Whether or not the list is currently empty\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classDblLink_a04b7c312227d6eabb96cbe6db17a8645}{find} (elt\-Type)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Finds the value within the doubly linked list, and remains at that element\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classDblLink_a1eea642e9114517a9b8976bec5108612}{insert} (elt\-Type)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Inserts the given parameter to a created node before the current value\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classDblLink_a9dee7a88fd268b8c587a6df95b4eab03}{remove} (elt\-Type)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Searches for an element in the list, and removes it if it is found\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDblLink_a15e9b1e37fae72414617320686b8b4f0}{class {\bfseries Dbl\-Link\-Itr$<$ elt\-Type $>$}}\label{classDblLink_a15e9b1e37fae72414617320686b8b4f0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class elt\-Type$>$class Dbl\-Link$<$ elt\-Type $>$}
+
+\char`\"{}\-Implementation of a doubly linked list for use in project 3, used by Dbl\-Link\-List.\-h/.\-cpp\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDblLink_a6ec142fb189ce28f3470662d7816323c}{\index{Dbl\-Link@{Dbl\-Link}!Dbl\-Link@{Dbl\-Link}}
+\index{Dbl\-Link@{Dbl\-Link}!DblLink@{Dbl\-Link}}
+\subsubsection[{Dbl\-Link}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type $>$ {\bf Dbl\-Link}$<$ elt\-Type $>$\-::{\bf Dbl\-Link} (
+\begin{DoxyParamCaption}
+\item[{{\bf Dbl\-Link}$<$ elt\-Type $>$ \&}]{cl}
+\end{DoxyParamCaption}
+)}}\label{classDblLink_a6ec142fb189ce28f3470662d7816323c}
+
+
+\char`\"{}\-Creates a deep copy construction of the list\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dbl\-Link\&} & \char`\"{}\-The original list for copying\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDblLink_a6967117514e7b8372e0b83cd74db0bdc}{\index{Dbl\-Link@{Dbl\-Link}!empty@{empty}}
+\index{empty@{empty}!DblLink@{Dbl\-Link}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class elt\-Type$>$ {\bf Dbl\-Link}$<$ elt\-Type $>$\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDblLink_a6967117514e7b8372e0b83cd74db0bdc}
+
+
+\char`\"{}\-Whether or not the list is currently empty\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-Answers true if the list is empty, false if it is not empty\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classDblLink_a04b7c312227d6eabb96cbe6db17a8645}{\index{Dbl\-Link@{Dbl\-Link}!find@{find}}
+\index{find@{find}!DblLink@{Dbl\-Link}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class elt\-Type$>$ {\bf Dbl\-Link}$<$ elt\-Type $>$\-::find (
+\begin{DoxyParamCaption}
+\item[{elt\-Type}]{}
+\end{DoxyParamCaption}
+)}}\label{classDblLink_a04b7c312227d6eabb96cbe6db17a8645}
+
+
+\char`\"{}\-Finds the value within the doubly linked list, and remains at that element\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elt\-Type} & \char`\"{}\-The element to be found\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-Returns true if found, false if not found\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classDblLink_a1eea642e9114517a9b8976bec5108612}{\index{Dbl\-Link@{Dbl\-Link}!insert@{insert}}
+\index{insert@{insert}!DblLink@{Dbl\-Link}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ void {\bf Dbl\-Link}$<$ elt\-Type $>$\-::insert (
+\begin{DoxyParamCaption}
+\item[{elt\-Type}]{x}
+\end{DoxyParamCaption}
+)}}\label{classDblLink_a1eea642e9114517a9b8976bec5108612}
+
+
+\char`\"{}\-Inserts the given parameter to a created node before the current value\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elt\-Type} & \char`\"{}\-The element to be inputted\char`\"{} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDblLink_a4ad84478d74adf66e4e8b33a790135b8}{\index{Dbl\-Link@{Dbl\-Link}!operator=@{operator=}}
+\index{operator=@{operator=}!DblLink@{Dbl\-Link}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type $>$ {\bf Dbl\-Link}$<$ elt\-Type $>$ \& {\bf Dbl\-Link}$<$ elt\-Type $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dbl\-Link}$<$ elt\-Type $>$ \&}]{cl}
+\end{DoxyParamCaption}
+)}}\label{classDblLink_a4ad84478d74adf66e4e8b33a790135b8}
+
+
+\char`\"{}\-Assigns the contents of one doubly linked list to another\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const Dbl\-Link\&} & \char`\"{}\-The list to be assigned the information\char`\"{} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDblLink_a9dee7a88fd268b8c587a6df95b4eab03}{\index{Dbl\-Link@{Dbl\-Link}!remove@{remove}}
+\index{remove@{remove}!DblLink@{Dbl\-Link}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type$>$ void {\bf Dbl\-Link}$<$ elt\-Type $>$\-::remove (
+\begin{DoxyParamCaption}
+\item[{elt\-Type}]{x}
+\end{DoxyParamCaption}
+)}}\label{classDblLink_a9dee7a88fd268b8c587a6df95b4eab03}
+
+
+\char`\"{}\-Searches for an element in the list, and removes it if it is found\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elt\-Type} & \char`\"{}\-The element to be removed if found\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DblLink_8h}{Dbl\-Link.\-h}\end{DoxyCompactItemize}

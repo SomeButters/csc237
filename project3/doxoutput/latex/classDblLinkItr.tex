@@ -1,0 +1,122 @@
+\hypertarget{classDblLinkItr}{\section{Dbl\-Link\-Itr$<$ elt\-Type $>$ Class Template Reference}
+\label{classDblLinkItr}\index{Dbl\-Link\-Itr$<$ elt\-Type $>$@{Dbl\-Link\-Itr$<$ elt\-Type $>$}}
+}
+
+
+\char`\"{}\-Implementation of a doubly linked list iterator for ease of use in accessing the linked list's contents\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Dbl\-Link.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDblLinkItr_a029e88245826cd3f4940e8c2ccdf1508}{Dbl\-Link\-Itr} (const \hyperlink{classDblLink}{Dbl\-Link}$<$ elt\-Type $>$ \&list)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Default constructor, requires a doubly linked list as input\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{classDblLinkItr_a1f2303149b9a0ecc0cc94fc3669d42e6}{void \hyperlink{classDblLinkItr_a1f2303149b9a0ecc0cc94fc3669d42e6}{start} ()}\label{classDblLinkItr_a1f2303149b9a0ecc0cc94fc3669d42e6}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Initializes the iterator at the first value, must be done before any arithmatic\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classDblLinkItr_abd8531686d0efb34dfe334070755bedd}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Checks to see if the iterator's doubly linked list is empty\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classDblLinkItr_a481fe000f5c0b9e9a90c8ec947ac2366}{is\-Last\-Node} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Checks to see if the the iterator's current node is the last one\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classDblLinkItr_abd2248f781624a381dcc407af0081314}{is\-First\-Node} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Checks to see if the iterator's current node is the first one\char`\"{} \end{DoxyCompactList}\item 
+elt\-Type \hyperlink{classDblLinkItr_ac3e8e420c63d144a562da5dbb8da9ce0}{operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Returns the contents of the iterator's current node\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{classDblLinkItr_a6880f6792f580bcbaa677c509bcfef8a}{void \hyperlink{classDblLinkItr_a6880f6792f580bcbaa677c509bcfef8a}{operator++} ()}\label{classDblLinkItr_a6880f6792f580bcbaa677c509bcfef8a}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Increments the iterator to the next node in the list\char`\"{} \end{DoxyCompactList}\item 
+\hypertarget{classDblLinkItr_aa3dec9a784bfee4907bc1a7a94bbf1dc}{void \hyperlink{classDblLinkItr_aa3dec9a784bfee4907bc1a7a94bbf1dc}{operator-\/-\/} ()}\label{classDblLinkItr_aa3dec9a784bfee4907bc1a7a94bbf1dc}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Decrements the iterator to the previous node in the list\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class elt\-Type$>$class Dbl\-Link\-Itr$<$ elt\-Type $>$}
+
+\char`\"{}\-Implementation of a doubly linked list iterator for ease of use in accessing the linked list's contents\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDblLinkItr_a029e88245826cd3f4940e8c2ccdf1508}{\index{Dbl\-Link\-Itr@{Dbl\-Link\-Itr}!Dbl\-Link\-Itr@{Dbl\-Link\-Itr}}
+\index{Dbl\-Link\-Itr@{Dbl\-Link\-Itr}!DblLinkItr@{Dbl\-Link\-Itr}}
+\subsubsection[{Dbl\-Link\-Itr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type $>$ {\bf Dbl\-Link\-Itr}$<$ elt\-Type $>$\-::{\bf Dbl\-Link\-Itr} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dbl\-Link}$<$ elt\-Type $>$ \&}]{list}
+\end{DoxyParamCaption}
+)}}\label{classDblLinkItr_a029e88245826cd3f4940e8c2ccdf1508}
+
+
+\char`\"{}\-Default constructor, requires a doubly linked list as input\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const Dbl\-Link$<$elt\-Type$>$ \&list} & \char`\"{}\-The doubly linked list to construct the iterator upon\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDblLinkItr_abd8531686d0efb34dfe334070755bedd}{\index{Dbl\-Link\-Itr@{Dbl\-Link\-Itr}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!DblLinkItr@{Dbl\-Link\-Itr}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type $>$ bool {\bf Dbl\-Link\-Itr}$<$ elt\-Type $>$\-::is\-Empty (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDblLinkItr_abd8531686d0efb34dfe334070755bedd}
+
+
+\char`\"{}\-Checks to see if the iterator's doubly linked list is empty\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-True if the list is empty, false if else-\/wise\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classDblLinkItr_abd2248f781624a381dcc407af0081314}{\index{Dbl\-Link\-Itr@{Dbl\-Link\-Itr}!is\-First\-Node@{is\-First\-Node}}
+\index{is\-First\-Node@{is\-First\-Node}!DblLinkItr@{Dbl\-Link\-Itr}}
+\subsubsection[{is\-First\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type $>$ bool {\bf Dbl\-Link\-Itr}$<$ elt\-Type $>$\-::is\-First\-Node (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDblLinkItr_abd2248f781624a381dcc407af0081314}
+
+
+\char`\"{}\-Checks to see if the iterator's current node is the first one\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-True if it is the first value, false if else-\/wise\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classDblLinkItr_a481fe000f5c0b9e9a90c8ec947ac2366}{\index{Dbl\-Link\-Itr@{Dbl\-Link\-Itr}!is\-Last\-Node@{is\-Last\-Node}}
+\index{is\-Last\-Node@{is\-Last\-Node}!DblLinkItr@{Dbl\-Link\-Itr}}
+\subsubsection[{is\-Last\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type $>$ bool {\bf Dbl\-Link\-Itr}$<$ elt\-Type $>$\-::is\-Last\-Node (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDblLinkItr_a481fe000f5c0b9e9a90c8ec947ac2366}
+
+
+\char`\"{}\-Checks to see if the the iterator's current node is the last one\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-True if it is the last value, false if else-\/wise\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classDblLinkItr_ac3e8e420c63d144a562da5dbb8da9ce0}{\index{Dbl\-Link\-Itr@{Dbl\-Link\-Itr}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!DblLinkItr@{Dbl\-Link\-Itr}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename elt\-Type $>$ elt\-Type {\bf Dbl\-Link\-Itr}$<$ elt\-Type $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDblLinkItr_ac3e8e420c63d144a562da5dbb8da9ce0}
+
+
+\char`\"{}\-Returns the contents of the iterator's current node\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+elt\-Type \char`\"{}\-The contents of the iterator's current node\char`\"{} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DblLink_8h}{Dbl\-Link.\-h}\end{DoxyCompactItemize}

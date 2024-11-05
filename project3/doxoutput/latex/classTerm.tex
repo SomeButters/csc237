@@ -1,0 +1,188 @@
+\hypertarget{classTerm}{\section{Term Class Reference}
+\label{classTerm}\index{Term@{Term}}
+}
+
+
+\char`\"{}\-Object that contains information for a polynomial\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Term.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTerm_aa72ef129269040b50836346dcae32154}{Term} (double=0, int=0)
+\begin{DoxyCompactList}\small\item\em "Basic constructor for the \hyperlink{classTerm}{Term} object \end{DoxyCompactList}\item 
+double \hyperlink{classTerm_a51ba0eb6ed3140d3fb2fe43cc4bdcace}{get\-Coefficient} () const 
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Returns the value of the coefficient of the polynomial within the object\char`\"{} \end{DoxyCompactList}\item 
+int \hyperlink{classTerm_a97ab7c2fa2a3b39939c2d9b0498276ae}{get\-Exponent} () const 
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Returns the value of the exponent of the polynomial within the object\char`\"{} \end{DoxyCompactList}\item 
+double \hyperlink{classTerm_ab89ea23f82711d4fc9f4608d0937ce31}{operator()} (double x) const 
+\begin{DoxyCompactList}\small\item\em "Returns the value of the evaluation of the polynomial given x \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a8e563a63ca972c9d2cffacb471a611a5}{operator==} (int value)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Compares one term against a value\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a22d1367b67d2c2d2762392463decde13}{operator==} (const \hyperlink{classTerm}{Term} \&right)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Compares one term against another term\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_ade58cd311d21215402183d2dec66b48a}{operator$<$} (\hyperlink{classTerm}{Term} \&right)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Returns the bool for the term being less than another value via their exponents\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classTerm_a44f5d686c50172e689cf86b2c77bbc6a}{operator$<$} (int right)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Returns the bool for the term being less than an integer via it's exponent\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\-Object that contains information for a polynomial\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTerm_aa72ef129269040b50836346dcae32154}{\index{Term@{Term}!Term@{Term}}
+\index{Term@{Term}!Term@{Term}}
+\subsubsection[{Term}]{\setlength{\rightskip}{0pt plus 5cm}Term\-::\-Term (
+\begin{DoxyParamCaption}
+\item[{double}]{coeff = {\ttfamily 0}, }
+\item[{int}]{expn = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classTerm_aa72ef129269040b50836346dcae32154}
+
+
+"Basic constructor for the \hyperlink{classTerm}{Term} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & \char`\"{}\-Value for the coefficient of the polynomial\char`\"{} \\
+\hline
+{\em int} & \char`\"{}\-Value for the exponent of the polynomial\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTerm_a51ba0eb6ed3140d3fb2fe43cc4bdcace}{\index{Term@{Term}!get\-Coefficient@{get\-Coefficient}}
+\index{get\-Coefficient@{get\-Coefficient}!Term@{Term}}
+\subsubsection[{get\-Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}Term\-::get\-Coefficient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classTerm_a51ba0eb6ed3140d3fb2fe43cc4bdcace}
+
+
+\char`\"{}\-Returns the value of the coefficient of the polynomial within the object\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+double \char`\"{}\-Value of the coefficient\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classTerm_a97ab7c2fa2a3b39939c2d9b0498276ae}{\index{Term@{Term}!get\-Exponent@{get\-Exponent}}
+\index{get\-Exponent@{get\-Exponent}!Term@{Term}}
+\subsubsection[{get\-Exponent}]{\setlength{\rightskip}{0pt plus 5cm}Term\-::get\-Exponent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classTerm_a97ab7c2fa2a3b39939c2d9b0498276ae}
+
+
+\char`\"{}\-Returns the value of the exponent of the polynomial within the object\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+double \char`\"{}\-Value of the exponent\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classTerm_ab89ea23f82711d4fc9f4608d0937ce31}{\index{Term@{Term}!operator()@{operator()}}
+\index{operator()@{operator()}!Term@{Term}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double Term\-::operator() (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+) const}}\label{classTerm_ab89ea23f82711d4fc9f4608d0937ce31}
+
+
+"Returns the value of the evaluation of the polynomial given x 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double x} & \char`\"{}\-The value to evaluate the polynomial with\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double \char`\"{}\-Value of the evalutaed polynomial\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classTerm_ade58cd311d21215402183d2dec66b48a}{\index{Term@{Term}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Term@{Term}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Term} \&}]{right}
+\end{DoxyParamCaption}
+)}}\label{classTerm_ade58cd311d21215402183d2dec66b48a}
+
+
+\char`\"{}\-Returns the bool for the term being less than another value via their exponents\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Term \&right} & \char`\"{}\-The value to compare to the term\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-True if the exponent of the term is less than the compared one, false if else-\/wise\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classTerm_a44f5d686c50172e689cf86b2c77bbc6a}{\index{Term@{Term}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Term@{Term}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a44f5d686c50172e689cf86b2c77bbc6a}
+
+
+\char`\"{}\-Returns the bool for the term being less than an integer via it's exponent\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int right} & \char`\"{}\-The value to compare the term to\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-True if the term's exponent is less than the integer, false if else-\/wise\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classTerm_a8e563a63ca972c9d2cffacb471a611a5}{\index{Term@{Term}!operator==@{operator==}}
+\index{operator==@{operator==}!Term@{Term}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator== (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a8e563a63ca972c9d2cffacb471a611a5}
+
+
+\char`\"{}\-Compares one term against a value\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int value} & \char`\"{}\-The value to compare the term to\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-True if the polynomials exponent is the same as the integer value, false if else-\/wise\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classTerm_a22d1367b67d2c2d2762392463decde13}{\index{Term@{Term}!operator==@{operator==}}
+\index{operator==@{operator==}!Term@{Term}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term} \&}]{right}
+\end{DoxyParamCaption}
+)}}\label{classTerm_a22d1367b67d2c2d2762392463decde13}
+
+
+\char`\"{}\-Compares one term against another term\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const Term \&right} & \char`\"{}\-The term to compare the term to\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \char`\"{}\-True if the terms' exponents are the same, false if else-\/wise\char`\"{} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Term_8h}{Term.\-h}\item 
+Term.\-cpp\end{DoxyCompactItemize}
