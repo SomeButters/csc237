@@ -18,14 +18,8 @@ TermSTLObjList.o: Term.h TermSTLObjList.cpp TermSTLObjList.h TermList.h
 TermDblLinkList.o: Term.h TermDblLinkList.cpp TermDblLinkList.h TermList.h
 	$(COMPILER) -c TermDblLinkList.cpp $(DEBUG)
 
-
 app.o:  TermArrayList.h TermList.h TermSTLObjList.h TermDblLinkList.h Term.h app.cpp 
 	$(COMPILER) -c app.cpp $(DEBUG)
-
-
-
-
-
 
 clean:
 	rm -rf *.o testLL testLL.exe
