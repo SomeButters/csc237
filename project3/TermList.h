@@ -21,7 +21,7 @@
     Course:         CSC237 020
     Professor:      Dr. Spiegel
     Assignment:     Project 3 (Updated file)
-    Filename:       TermDblLinkList.cpp
+    Filename:       TermList.h
     Purpose:        To implement TermSTLObjList.h
 */
 

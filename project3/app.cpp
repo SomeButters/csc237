@@ -712,4 +712,3 @@ void STPoly(string filename, TermList *ThePoly, double x) {
     cout << "\n\n";
     return;
 }
-
