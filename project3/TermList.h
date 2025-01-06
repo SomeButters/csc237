@@ -22,7 +22,7 @@
     Professor:      Dr. Spiegel
     Assignment:     Project 3 (Updated file)
     Filename:       TermList.h
-    Purpose:        To implement TermSTLObjList.h
+    Purpose:        To manage Term lists and manage Doxygen briefing as well
 */
 
 #ifndef TERMLIST_H
